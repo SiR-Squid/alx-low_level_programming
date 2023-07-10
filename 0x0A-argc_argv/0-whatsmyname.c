@@ -7,14 +7,11 @@
  */
 int main(int argc, char *argv[])
 {
-	if (argc > 1)
+	int i;
+
+	for (i = 0; i < argc; i++)
 	{
-		argv[0] = argv[1];
-		printf("%s\n", argv[0]);
-	}
-	else
-	{
-		printf("%s\n", argv[0]);
+		printf("%s\n", argv[i]);
 	}
 	return (0);
 }
